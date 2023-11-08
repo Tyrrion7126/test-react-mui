@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -12,7 +11,6 @@ function redirectGithub() {
 }
 
 function Navbar() {
-  const themePrimary = theme.palette.primary;
   return (
       <ThemeProvider theme={theme}>
         <AppBar color="transparent" position="fixed" sx={{ borderBottom: 1, borderColor:`rgba(255, 255, 255, 0.3)`, boxShadow: "none", backdropFilter: "blur(20px)" }}>
