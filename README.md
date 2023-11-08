@@ -1,4 +1,6 @@
-## Running React on Repl.it
+## About this repository
+This repo is for my personal portfolio website using React.js library with Material UI.
+
 
 [React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
 
