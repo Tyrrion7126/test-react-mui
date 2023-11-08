@@ -3,5 +3,5 @@ node_modules
 dist
 dist-ssr
 *.local
-avatar.jpeg
-landscape.jpeg
+./avatar.jpeg
+./landscape.jpeg

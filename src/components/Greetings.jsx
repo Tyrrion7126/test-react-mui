@@ -1,5 +1,4 @@
 import React from "react";
-// import "@fontsource/k2d/700.css"
 import { Typography, Box, Container } from "@mui/material";
 
 class Greetings extends React.Component {
