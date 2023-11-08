@@ -4,22 +4,25 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { IconButton, Toolbar, AppBar } from '@mui/material';
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./Theme";
 
 function redirectGithub() {
     window.open("https://github.com/Tyrrion7126");
 }
 
 function Navbar() {
+  const themePrimary = theme.palette.primary;
   return (
-      <div>
-        <AppBar color="transparent" position="fixed" sx={{ border: 1, borderColor: `rgba(0, 0, 0, 0.2)`, boxShadow: "none" }}>
+      <ThemeProvider theme={theme}>
+        <AppBar color="transparent" position="fixed" sx={{ borderBottom: 1, borderColor:`rgba(255, 255, 255, 0.3)`, boxShadow: "none", backdropFilter: "blur(20px)" }}>
           <Toolbar>
             <IconButton
                 edge="end"
                 color="primary"
                 size="small"
                 aria-label="menu"
-                sx={{ border: 1, borderColor: `rgba(0, 0, 0, 0.2)`, borderRadius: "12px", padding: "5px" }}
+                sx={{ border: 1, borderColor: `rgba(255, 255, 255, 0.3)`, borderRadius: "13px", padding: "4px" }}
             >
                 <DragHandleIcon />
             </IconButton>
@@ -29,7 +32,7 @@ function Navbar() {
                 color="primary"
                 size="small"
                 aria-label="github"
-                sx={{ marginLeft: "auto", border: 1, borderColor: `rgba(0, 0, 0, 0.2)`, borderRadius: "12px", padding: "5px" }}
+                sx={{ marginLeft: "auto", border: 1, borderColor: `rgba(255, 255, 255, 0.3)`, borderRadius: "13px", padding: "4px" }}
             >
                 <GitHubIcon />
             </IconButton>
@@ -38,7 +41,7 @@ function Navbar() {
                 color="primary"
                 size="small"
                 aria-label="github"
-                sx={{ marginLeft: "10px", border: 1, borderColor: `rgba(0, 0, 0, 0.2)`, borderRadius: "12px", padding: "5px" }}
+                sx={{ marginLeft: "10px", border: 1, borderColor: `rgba(255, 255, 255, 0.3)`, borderRadius: "13px", padding: "4px" }}
             >
                 <InstagramIcon />
             </IconButton>
@@ -47,13 +50,13 @@ function Navbar() {
                 color="primary"
                 size="small"
                 aria-label="github"
-                sx={{ marginLeft: "10px", border: 1, borderColor: `rgba(0, 0, 0, 0.2)`, borderRadius: "12px", padding: "5px" }}
+                sx={{ marginLeft: "10px", border: 1, borderColor: `rgba(255, 255, 255, 0.3)`, borderRadius: "13px", padding: "4px" }}
             >
                 <SettingsOutlinedIcon />
             </IconButton>
           </Toolbar>
         </AppBar>
-      </div>
+      </ThemeProvider>
     );
 }
 export default Navbar;

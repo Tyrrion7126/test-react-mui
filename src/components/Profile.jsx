@@ -5,9 +5,6 @@ import CardHeader from "@mui/material/CardHeader"
 function Profile() {
     return (
         <div>
-            <Card sx={{ marginTop: "100px", marginLeft: "30px" }}>
-                <CardHeader title="Lorem" avatar="avatar.jpeg" />
-            </Card>
         </div>
     )
 }
