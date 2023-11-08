@@ -31,7 +31,7 @@ function Greetings() {
                     >
                     Hello 
                     </span>
-                    visitor
+                    visitor,
                 </Typography>
                 <Typography
                     align="center"
