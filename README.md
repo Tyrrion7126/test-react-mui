@@ -1,3 +1,4 @@
+## About this repository
 A simple personal portfolio website using React.js library with Material UI framework.
 
 ## Framework
