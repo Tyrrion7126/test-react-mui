@@ -3,6 +3,5 @@ node_modules
 dist
 dist-ssr
 *.local
-avatar.jpg
-landscape.jpeg
+src/assets
 

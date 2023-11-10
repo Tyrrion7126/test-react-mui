@@ -1,4 +1,5 @@
 import React from 'react';
+import Profile from "./components/Profile";
 import Navbar from "./components/Navbar";
 import Greetings from "./components/Greetings";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -16,6 +17,7 @@ function App() {
             <CssBaseline />
             <Navbar />
             <Greetings />
+            <Profile />
         </ThemeProvider>
     );
 }

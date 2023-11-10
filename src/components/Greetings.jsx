@@ -7,7 +7,7 @@ import theme from "./Theme";
 function Greetings() {
     return (
         <ThemeProvider theme={theme}>
-            <Container sx={{ marginTop: "80px" }}>
+            <Container sx={{ marginTop: "90px" }}>
                 <Typography
                     align="center"
                     sx={{
@@ -67,7 +67,7 @@ function Greetings() {
                       justifyContent: "center",
                     }}
                   >
-                    I'm beginner Discord Bot Dev and Web Developer from West Java, Indonesia.
+                    I'm beginner Discord Bot Dev and Web Developer from Indonesia.
                 </Typography>
             </Container>
         </ThemeProvider>
